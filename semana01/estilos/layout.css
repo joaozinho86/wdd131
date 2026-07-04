@@ -1,0 +1,78 @@
+/* Definições globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  grid-area: header;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Navegação com Flexbox */
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+/* Conteúdo principal */
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+section {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+aside {
+  background-color: #eaeaea;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+  grid-area: footer;
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
