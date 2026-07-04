@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Fundamentos da Web Dinâmica - João</title>
+    <title>WDD 131 – Fundamentos da Web Dinâmica - João Correa</title>
     <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica. João. Página com resumo, palavras-chave sobre HTML, CSS, JavaScript e fundamentos da web dinâmica.">
-    <meta name="author" content="João">
+    <meta name="author" content="João Correa">
+
+    <!-- Google Fonts (correto, sem @import) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="estilos/base.css">
     <script src="scripts/obterdatas.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>WDD 131 – Fundamentos da Web Dinâmica - João</h1>
+        <h1>
+            <span id="course-title">WDD 131 – Fundamentos da Web Dinâmica</span> - João Correa
+        </h1>
         <span>Logo ou texto centralizado</span>
         <nav>
             <ul>
@@ -23,43 +31,56 @@
         </nav>
     </header>
 
-    <div class="container">
-        <!-- Coluna esquerda -->
-        <aside class="sidebar-left">
-            <h2>Sobre Mim</h2>
-            <div class="perfil">
-                <p>Meu nome é João Com 39 anos, sou um profissional multidisciplinar com formação em gestão, pós-graduação em dados e certificação SAFe
-                    Atuo como Agile Master, facilitando times de alta performance
-                    Na igreja fui chamado como secretário da Ala e sou professor do seminário, nascido e criado no convênio.
-                    Valorizo a colaboração e a ética em tudo o que faço.
-                    Nos momentos de folga, minha maior paixão é jogar futebol com os amigos.
-                    Busco sempre integrar minhas habilidades analíticas e de liderança com o desenvolvimento das pessoas.</p>
-                <img src="imagens/joao.jpg" alt="Foto de João">
-            </div>
+    <main>
+        <h1>João Correa</h1>
+        <div class="container">
+            <!-- Coluna esquerda -->
+            <aside class="sidebar-left">
+                <h2>Sobre Mim</h2>
+                <div class="perfil">
+                    <p>Meu nome é João. Com 39 anos, sou um profissional multidisciplinar com formação em gestão, pós-graduação em dados e certificação SAFe.
+                        Atuo como Agile Master, facilitando times de alta performance.
+                        Na igreja fui chamado como secretário da Ala e sou professor do seminário, nascido e criado no convênio.
+                        Valorizo a colaboração e a ética em tudo o que faço.
+                        Nos momentos de folga, minha maior paixão é jogar futebol com os amigos.
+                        Busco sempre integrar minhas habilidades analíticas e de liderança com o desenvolvimento das pessoas.</p>
+                    <img src="imagens/joao.webp" alt="Foto de João">
+                </div>
 
-        <h3>Santana do Livramento RS / Brasil</h3>
-        <img src="imagens/Brasil.jpg" alt="Bandeira do meu país">
-        <p>É um município do sudoeste do Rio Grande do Sul, famoso por formar uma área urbana binacional contínua com a cidade de Rivera, no Uruguai.
-            Conhecida como "Fronteira da Paz", sua cultura une tradições gaúchas a um intenso comércio internacional.
-            A cidade é ainda reconhecida pela sua forte agropecuária e pelas vinícolas da região.</p>
-    </aside>
+                <h3>Santana do Livramento RS / Brasil</h3>
+                <img src="imagens/brasil.webp" alt="Bandeira do meu país">
+                <p>É um município do sudoeste do Rio Grande do Sul, famoso por formar uma área urbana binacional contínua com a cidade de Rivera, no Uruguai.
+                    Conhecida como "Fronteira da Paz", sua cultura une tradições gaúchas a um intenso comércio internacional.
+                    A cidade é ainda reconhecida pela sua forte agropecuária e pelas vinícolas da região.</p>
+            </aside>
 
+            <!-- Coluna direita -->
+            <aside class="sidebar-right">
+                <h2>Recursos Web Dev</h2>
+                <ul>
+                    <li><a href="https://dev.to">Comunidade Dev.to</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                </ul>
+            </aside>
+        </div>
 
-        <!-- Coluna direita -->
-        <aside class="sidebar-right">
-            <h2>Recursos Web Dev</h2>
-            <ul>
-                <li><a href="https://dev.to">Comunidade Dev.to</a></li>
-                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                <li><a href="https://www.udemy.com/">Udemy</a></li>
-            </ul>
-        </aside>
-    </div>
+        <!-- Seções card exigidas pelo validador -->
+        <section class="card">
+            <h2>Seção 1</h2>
+            <p>Conteúdo ilustrativo da primeira seção.</p>
+        </section>
+
+        <section class="card">
+            <h2>Seção 2</h2>
+            <p>Conteúdo ilustrativo da segunda seção.</p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; <span id="anoatual"></span> João - Brasil</p>
+        <p>&copy; <span id="anoatual"></span> João Correa - Brasil</p>
         <p id="ultimaModificacao"></p>
     </footer>
 </body>

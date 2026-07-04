@@ -1,9 +1,4 @@
 /* ================================
-   GOOGLE FONTS
-   ================================ */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
-
-/* ================================
    RESET
    ================================ */
 * {
@@ -69,20 +64,27 @@ nav a:hover {
 }
 
 /* ================================
-   CONTAINER PRINCIPAL (DUAS COLUNAS)
+   MAIN
+   ================================ */
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+/* ================================
+   CONTAINER PRINCIPAL (GRID)
    ================================ */
 .container {
-    flex: 1;
-    display: flex;
+    display: grid; /* uso de CSS Grid */
+    grid-template-columns: 2fr 1fr;
     gap: 1rem;
-    padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* ================================
    COLUNA ESQUERDA — SOBRE MIM
    ================================ */
 .sidebar-left {
-    flex: 2;
     background-color: #eaeaea;
     padding: 1rem;
     border-radius: 8px;
@@ -120,7 +122,6 @@ nav a:hover {
    COLUNA DIREITA — RECURSOS WEB DEV
    ================================ */
 .sidebar-right {
-    flex: 1;
     background-color: #f9f9f9;
     padding: 1rem;
     border-radius: 8px;
@@ -146,6 +147,22 @@ nav a:hover {
 }
 
 /* ================================
+   SEÇÕES CARD
+   ================================ */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+/* ================================
    FOOTER
    ================================ */
 footer {
@@ -165,7 +182,7 @@ footer p {
    ================================ */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
+        grid-template-columns: 1fr; /* colunas empilhadas */
     }
 
     .perfil {
