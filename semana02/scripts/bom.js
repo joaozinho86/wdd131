@@ -17,9 +17,13 @@ botao.addEventListener('click', () => {
 
     botaoExcluir.addEventListener('click', () => {
       lista.removeChild(li);
+      input.focus();
     });
 
     input.value = '';
+    input.focus();
+  } else {
+    alert('Digite um capítulo válido!');
     input.focus();
   }
 });
