@@ -5,20 +5,27 @@
   --cor-hover: #ab47bc;
 }
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0;
   background-color: var(--cor-secundaria);
   color: var(--cor-texto);
 }
 
+/* Header */
 header {
   background-color: var(--cor-primaria);
   color: white;
   padding: 1rem;
 }
 
-header h2 {
+header h1, header h2 {
   margin: 0;
   font-family: 'Merriweather', serif;
 }
@@ -48,7 +55,7 @@ nav a:hover {
   border-radius: 4px;
 }
 
-/* Ocultar links em inglês */
+/* Ocultar links em inglês (para validação) */
 .hidden {
   display: none;
 }
