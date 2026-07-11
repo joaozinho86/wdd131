@@ -1,4 +1,3 @@
-/* Layout para telas maiores */
 @media (min-width: 768px) {
   nav ul {
     flex-direction: row; /* Desktop: linha */

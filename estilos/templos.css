@@ -1,9 +1,6 @@
-/* Importando fontes do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap');
-
 :root {
-  --cor-primaria: #6a1b9a;   /* Roxo */
-  --cor-secundaria: #f3e5f5; /* Lilás claro */
+  --cor-primaria: #6a1b9a;
+  --cor-secundaria: #f3e5f5;
   --cor-texto: #333;
   --cor-hover: #ab47bc;
 }
@@ -52,11 +49,24 @@ nav a:hover {
   border-radius: 4px;
 }
 
+/* Botão hambúrguer */
+.hamburguer {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
 /* Main */
 main {
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile: uma coluna */
+  gap: 1rem;
 }
 
 main h1 {
@@ -64,13 +74,7 @@ main h1 {
   font-family: 'Merriweather', serif;
 }
 
-/* Galeria com Grid */
-main {
-  display: grid;
-  grid-template-columns: 1fr; /* Mobile: uma coluna */
-  gap: 1rem;
-}
-
+/* Galeria */
 figure {
   background: white;
   padding: 0.5rem;
