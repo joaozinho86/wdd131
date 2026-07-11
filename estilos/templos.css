@@ -1,0 +1,99 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+:root {
+  --cor-primaria: #6a1b9a;   /* Roxo */
+  --cor-secundaria: #f3e5f5; /* Lilás claro */
+  --cor-texto: #333;
+  --cor-hover: #ab47bc;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+}
+
+/* Header */
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 1rem;
+}
+
+header h2 {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+/* Navegação com Flex */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Mobile: coluna */
+}
+
+nav li {
+  margin: 0.5rem 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--cor-hover);
+  border-radius: 4px;
+}
+
+/* Main */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main h1 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+/* Galeria com Grid */
+main {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile: uma coluna */
+  gap: 1rem;
+}
+
+figure {
+  background: white;
+  padding: 0.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+figure img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background-color: var(--cor-primaria);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
