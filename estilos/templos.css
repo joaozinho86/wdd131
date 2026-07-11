@@ -12,7 +12,6 @@ body {
   color: var(--cor-texto);
 }
 
-/* Header */
 header {
   background-color: var(--cor-primaria);
   color: white;
@@ -24,13 +23,13 @@ header h2 {
   font-family: 'Merriweather', serif;
 }
 
-/* Navegação com Flex */
+/* Navegação */
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column; /* Mobile: coluna */
+  flex-direction: column;
 }
 
 nav li {
@@ -49,6 +48,11 @@ nav a:hover {
   border-radius: 4px;
 }
 
+/* Ocultar links em inglês */
+.hidden {
+  display: none;
+}
+
 /* Botão hambúrguer */
 .hamburguer {
   background: none;
@@ -65,7 +69,7 @@ main {
   margin: 0 auto;
   padding: 1rem;
   display: grid;
-  grid-template-columns: 1fr; /* Mobile: uma coluna */
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
