@@ -1,24 +1,46 @@
+/* ===========================
+   Variáveis globais
+=========================== */
 :root {
-  --primary-color: #006400; /* Exemplo: verde da bandeira do Brasil */
-  --secondary-color: #ffdf00; /* amarelo */
-  --font-family: 'Arial', sans-serif;
+  --color-primary: #008000;   /* Verde da bandeira de Madagascar */
+  --color-secondary: #ff0000; /* Vermelho */
+  --color-neutral: #ffffff;   /* Branco */
+  --font-main: 'Arial', sans-serif;
+}
+
+/* ===========================
+   Reset básico
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: var(--font-family);
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
+  font-family: var(--font-main);
+  background-color: var(--color-neutral);
   color: #333;
+  line-height: 1.6;
 }
 
+/* ===========================
+   Cabeçalho e rodapé
+=========================== */
 header, footer {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-neutral);
   text-align: center;
   padding: 1rem;
 }
 
+footer {
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   Conteúdo principal
+=========================== */
 main {
   display: flex;
   flex-direction: column;
@@ -27,12 +49,58 @@ main {
 }
 
 .data, .weather {
-  border: 1px solid var(--secondary-color);
+  border: 2px solid var(--color-secondary);
   padding: 1rem;
-  background-color: white;
+  background-color: var(--color-neutral);
+  border-radius: 6px;
 }
 
-/* Pseudoelemento para ícone de clima na versão desktop */
+/* Ícone de clima via pseudoelemento (desktop) */
 .weather h2::after {
   content: " ⛅";
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  color: var(--color-secondary);
+}
+
+/* Ícone mobile (SVG visível apenas em telas pequenas) */
+.icon-mobile {
+  width: 32px;
+  height: 32px;
+}
+
+/* ===========================
+   Consultas de mídia
+=========================== */
+
+/* Layout desktop */
+@media (min-width: 768px) {
+  body {
+    background-image: url("images/madagascar-bg.webp"); /* imagem de fundo desktop */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .data, .weather {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.85); /* leve transparência para destacar sobre o fundo */
+  }
+
+  .icon-mobile {
+    display: none;
+  }
+}
+
+/* Layout mobile */
+@media (max-width: 767px) {
+  .data, .weather {
+    width: 100%;
+  }
 }
