@@ -1,14 +1,33 @@
+/* Layout mobile (imagem inline normal) */
+picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Layout desktop (imagem vira plano de fundo) */
 @media (min-width: 768px) {
+  body {
+    background-image: url("imagens/local-small.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  /* Esconde a imagem inline no desktop */
+  picture {
+    display: none;
+  }
+
   main {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .data, .weather {
     width: 45%;
-  }
-
-  .icon-mobile {
-    display: none;
+    background-color: rgba(255, 255, 255, 0.85); /* transparência para destacar sobre o fundo */
+    border-radius: 6px;
   }
 }

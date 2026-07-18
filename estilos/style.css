@@ -76,7 +76,7 @@ main {
 /* Layout desktop */
 @media (min-width: 768px) {
   body {
-    background-image: url("images/madagascar-bg.webp"); /* imagem de fundo desktop */
+    background-image: url("imagens/local-small.webp"); /* imagem de fundo desktop */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
