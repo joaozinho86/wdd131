@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .data, .weather {
+    width: 45%;
+  }
+
+  .icon-mobile {
+    display: none;
+  }
+}

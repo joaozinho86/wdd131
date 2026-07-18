@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página do País</title>
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/responsive.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Página do País</h1>
+  </header>
+
+  <main>
+    <!-- Imagem principal responsiva -->
+    <picture>
+      <source srcset="imagens/local-large.webp" media="(min-width: 768px)">
+      <source srcset="imagens/local-medium.webp" media="(min-width: 480px)">
+      <img src="imagens/local-small.webp" alt="Imagem do local">
+    </picture>
+
+    <!-- Dados -->
+    <section class="data">
+      <h2>Dados</h2>
+      <p>Label: Value</p>
+      <p>Label: Value</p>
+      <p>Label: Value</p>
+      <p>Label: Value</p>
+    </section>
+
+    <!-- Clima -->
+    <section class="weather">
+      <h2>Clima</h2>
+      <p>Temperatura: 8 °C</p>
+      <p>Vento: 10 km/h</p>
+      <p>Sensação térmica: <span id="sensacao">...</span></p>
+      <p>Condição: Ensolarado</p>
+      <!-- Ícone responsivo -->
+      <img class="icon-mobile" src="imagens/weather.svg" alt="Ícone clima">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> - Brasil - Última modificação: <span id="modificado"></span></p>
+  </footer>
+</body>
+</html>
