@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+  /* Navegação em telas grandes */
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem; /* já substitui margin em li */
+  }
+
+  nav li {
+    margin: 0; /* não precisa margem lateral se usamos gap */
+  }
+
+  /* Galeria de templos em grid responsivo */
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .templo-card {
+    text-align: left; /* melhora leitura em telas grandes */
+  }
+}
