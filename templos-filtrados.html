@@ -8,33 +8,35 @@
   <meta name="description" content="Álbum do Templo - Galeria de templos com design responsivo e moderno.">
   <meta name="author" content="João Alberto Gonçalves Correa">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="estilos/base-filtrado.css">
-  <link rel="stylesheet" href="estilos/layout-filtrados.css">
-  <link rel="stylesheet" href="estilos/templos-filtrados.css">
-  <link rel="stylesheet" href="estilos/templos-grande-filtrados.css">
+  <!-- CSS Consolidado -->
+  <link rel="stylesheet" href="estilos/templos-consolidado.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- JS -->
   <script src="scripts/templos-filtrados.js" defer></script>
 </head>
 <body>
   <header>
-  <h2>Álbum do Templo</h2>
-  <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
-  <nav>
-    <ul>
-      <li><a href="#" id="home">Página Inicial</a></li>
-      <li><a href="#" id="antigos">Antigos</a></li>
-      <li><a href="#" id="novos">Novos</a></li>
-      <li><a href="#" id="grandes">Grandes</a></li>
-      <li><a href="#" id="pequenos">Pequenos</a></li>
-    </ul>
-  </nav>
-</header>
-
+    <h2>Álbum do Templo</h2>
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="#" id="home">Página Inicial</a></li>
+        <li><a href="#" id="antigos">Antigo</a></li>
+        <li><a href="#" id="novos">Novo</a></li>
+        <li><a href="#" id="grandes">Grande</a></li>
+        <li><a href="#" id="pequenos">Pequeno</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main id="galeria-templos">
-    <!-- Os cartões dos templos serão gerados dinamicamente aqui -->
+    <h1>Galeria de Templos</h1>
+    <!-- Os cartões serão inseridos dinamicamente pelo JS -->
   </main>
 
   <footer>
