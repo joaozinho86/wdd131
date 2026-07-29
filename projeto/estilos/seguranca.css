@@ -1,0 +1,47 @@
+:root {
+  --cor-primaria: #1E88E5;
+  --cor-secundaria: #F9A825;
+  --cor-fundo: #F5F5F5;
+  --cor-texto: #212121;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+header {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+section {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+h2 {
+  color: var(--cor-primaria);
+  font-family: "Montserrat", sans-serif;
+}
+
+.imagem-pequena img,
+.clima img {
+  max-width: 100px;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+footer {
+  background-color: var(--cor-secundaria);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
