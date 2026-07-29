@@ -1,0 +1,58 @@
+/* Container das imagens lado a lado */
+.imagens-lado-a-lado {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Imagem pequena */
+.imagem-pequena img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Imagem grande */
+.imagem-grande img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Layout desktop (a partir de 768px) → colunas lado a lado */
+@media (min-width: 768px) {
+  .layout-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    margin-bottom: 0;
+  }
+}
+
+/* Layout mobile (até 767px) → colunas empilhadas */
+@media (max-width: 767px) {
+  .layout-desktop {
+    display: block; /* empilha as colunas */
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    margin-bottom: 1rem;
+  }
+
+  .imagens-lado-a-lado {
+    flex-direction: column; /* imagens uma embaixo da outra */
+    align-items: center;
+  }
+}

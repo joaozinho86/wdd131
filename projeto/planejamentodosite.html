@@ -3,39 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <title>Segurança em Foco</title>
+  <!-- CSS principal -->
   <link rel="stylesheet" href="estilos/seguranca.css">
+  <!-- CSS responsivo -->
+  <link rel="stylesheet" href="estilos/seguranca-responsivo.css">
 </head>
 <body>
 
   <!-- Cabeçalho -->
   <header>
+    <div class="logo">ST</div>
     <h1>Segurança em Foco</h1>
+    <p class="tagline">Práticas, normas e informações para ambientes de trabalho mais seguros e saudáveis.</p>
+    <p><strong>Domínio sugerido:</strong> segurancaemfoco.com.br</p>
+    <p><strong>Motivo da escolha:</strong> Nome simples e direto, transmite credibilidade e foco em segurança ocupacional.</p>
   </header>
 
-  <!-- Imagem pequena (visualização móvel) -->
-  <section class="imagem-pequena">
-    <img src="img/placeholder-small.png" alt="Imagem pequena ilustrativa">
+  <!-- Imagens lado a lado -->
+  <section class="imagens-lado-a-lado">
+    <div class="imagem-pequena">
+      <img src="imagem/imagem-pequena.webp" alt="Imagem ilustrativa pequena">
+    </div>
+    <div class="imagem-grande">
+      <img src="imagem/imagem-grande.webp" alt="Imagem ilustrativa grande">
+    </div>
   </section>
 
-  <!-- Seção de Dados -->
-  <section class="dados">
-    <h2>Dados</h2>
-    <p><strong>Norma:</strong> NR-6</p>
-    <p><strong>Descrição:</strong> Equipamentos de Proteção Individual</p>
-    <p><strong>Status:</strong> Obrigatório</p>
-  </section>
+  <!-- Layout principal -->
+  <main class="layout-desktop">
+    <div class="coluna-esquerda">
+      <section class="finalidade">
+        <h2>Finalidade do Site</h2>
+        <p>O site <strong>Segurança em Foco</strong> é um centro de referência em segurança do trabalho...</p>
+      </section>
 
-  <!-- Seção de Clima -->
-  <section class="clima">
-    <h2>Clima</h2>
-    <p><strong>Temperatura:</strong> 25°C</p>
-    <p><strong>Umidade:</strong> 60%</p>
-    <img src="img/placeholder-weather.png" alt="Ícone de clima">
-  </section>
+      <section class="cenarios">
+        <h2>Cenários</h2>
+        <ul>
+          <li>Quais EPIs são obrigatórios na construção civil?</li>
+          <li>Como implementar um programa de prevenção de riscos ambientais?</li>
+        </ul>
+      </section>
+
+      <section class="dados">
+        <h2>Dados</h2>
+        <p><strong>Norma:</strong> NR-6</p>
+        <p><strong>Descrição:</strong> Equipamentos de Proteção Individual</p>
+        <p><strong>Status:</strong> Obrigatório</p>
+      </section>
+    </div>
+
+    <div class="coluna-direita">
+      <section class="clima">
+        <h2>Clima</h2>
+        <p><strong>Temperatura:</strong> 25°C</p>
+        <p><strong>Umidade:</strong> 60%</p>
+        <img src="imagem/imagem-clima.webp" alt="Ícone de clima">
+      </section>
+
+      <section class="cores">
+        <h2>Esquema de Cores</h2>
+        <p>Azul (#1E88E5) – títulos e links</p>
+        <p>Amarelo (#F9A825) – alertas e botões</p>
+      </section>
+
+      <section class="tipografia">
+        <h2>Tipografia</h2>
+        <p>Montserrat para títulos, Roboto para corpo, Segoe UI como fallback.</p>
+      </section>
+    </div>
+  </main>
 
   <!-- Rodapé -->
   <footer>
-    <p>© 2026 Segurança em Foco • Sant’Ana do Livramento • Última modificação: 28/07/2026</p>
+    <p>© 2026 Segurança em Foco • Sant’Ana do Livramento • Última modificação: 29/07/2026</p>
   </footer>
 
 </body>
