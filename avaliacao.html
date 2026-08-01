@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmação de Avaliação</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Obrigado pela sua avaliação!</h1>
+  <p>Sua avaliação foi registrada com sucesso.</p>
+
+  <div id="contador"></div>
+
+  <footer>
+    ©2026 🎓 João Alberto Gonçalves Correa 🎓 Brasil - Última Modificação: 01/08/2026 14:17
+  </footer>
+
+  <script>
+    // Recupera contador do localStorage
+    let contador = localStorage.getItem("avaliacoes") || 0;
+    contador++;
+    localStorage.setItem("avaliacoes", contador);
+
+    // Exibe contador na página
+    document.getElementById("contador").textContent =
+      "Número de avaliações concluídas: " + contador;
+  </script>
+</body>
+</html>
