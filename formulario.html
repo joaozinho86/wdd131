@@ -9,20 +9,22 @@
   <link rel="stylesheet" href="estilos/style-formulario.css">
 </head>
 <body>
-  <!-- Cabeçalho semântico -->
+  <!-- Cabeçalho -->
   <header>
     <h1>Avaliação do Produto</h1>
   </header>
 
-  <!-- Formulário principal -->
+  <!-- Conteúdo principal -->
   <main>
     <form method="get" action="avaliacao.html">
       
+      <!-- Select -->
       <label for="produto">Nome do Produto</label>
       <select id="produto" name="produto" required>
         <option value="" disabled selected>Selecione um Produto...</option>
       </select>
 
+      <!-- Radios -->
       <label>Classificação Geral</label>
       <div class="stars">
         <input type="radio" id="estrela1" name="classificacao" value="1" required>
@@ -37,31 +39,36 @@
         <label for="estrela5">☆☆☆☆☆</label>
       </div>
 
+      <!-- Data -->
       <label for="data">Data de Instalação</label>
       <input type="date" id="data" name="data" required>
       <span class="hint">Formato: dd/mm/aaaa</span>
 
+      <!-- Checkboxes -->
       <label>Quais recursos você achou úteis no produto? (Marque todos que se aplicam)</label>
       <div class="checkbox-group">
-        <label><input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade"> Durabilidade</label>
-        <label><input type="checkbox" id="facilidade" name="recursos" value="Facilidade de Uso"> Facilidade de Uso</label>
-        <label><input type="checkbox" id="desempenho" name="recursos" value="Desempenho"> Desempenho</label>
-        <label><input type="checkbox" id="design" name="recursos" value="Design"> Design</label>
+        <label for="durabilidade"><input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade"> Durabilidade</label>
+        <label for="facilidade"><input type="checkbox" id="facilidade" name="recursos" value="Facilidade de Uso"> Facilidade de Uso</label>
+        <label for="desempenho"><input type="checkbox" id="desempenho" name="recursos" value="Desempenho"> Desempenho</label>
+        <label for="design"><input type="checkbox" id="design" name="recursos" value="Design"> Design</label>
       </div>
 
+      <!-- Textarea -->
       <label for="avaliacao">Avaliação Escrita (Optional)</label>
       <textarea id="avaliacao" name="avaliacao" rows="4"></textarea>
 
+      <!-- Nome -->
       <label for="usuario">Seu Nome (Optional)</label>
       <input type="text" id="usuario" name="usuario">
 
+      <!-- Botão -->
       <input type="submit" value="Publicar Avaliação">
     </form>
   </main>
 
-  <!-- Rodapé semântico -->
+  <!-- Rodapé -->
   <footer>
-    ©2026 🎓 João Alberto Gonçalves Correa 🎓 Brasil - Última Modificação: 01/08/2026 14:34
+    ©2026 🎓 João Alberto Gonçalves Correa 🎓 Brasil - Última Modificação: 01/08/2026 14:44
   </footer>
 
   <script src="scripts/script-formulario.js"></script>
