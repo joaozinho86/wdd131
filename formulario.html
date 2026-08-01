@@ -4,57 +4,66 @@
   <meta charset="UTF-8">
   <meta name="author" content="João Correa - Brasil">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulário de Avaliação de Produto - envie sua opinião, classificação e recursos úteis.">
   <title>Avaliação do Produto</title>
   <link rel="stylesheet" href="estilos/style-formulario.css">
 </head>
 <body>
-  <h1>Avaliação do Produto</h1>
-  <form method="get" action="avaliacao.html">
-    
-    <label for="produto">Nome do Produto</label>
-    <select id="produto" name="produto" required>
-      <option value="" disabled selected>Selecione um Produto...</option>
-    </select>
+  <!-- Cabeçalho semântico -->
+  <header>
+    <h1>Avaliação do Produto</h1>
+  </header>
 
-    <label>Classificação Geral</label>
-    <div class="stars">
-      <input type="radio" id="estrela1" name="classificacao" value="1" required>
-      <label for="estrela1">☆</label>
-      <input type="radio" id="estrela2" name="classificacao" value="2">
-      <label for="estrela2">☆☆</label>
-      <input type="radio" id="estrela3" name="classificacao" value="3">
-      <label for="estrela3">☆☆☆</label>
-      <input type="radio" id="estrela4" name="classificacao" value="4">
-      <label for="estrela4">☆☆☆☆</label>
-      <input type="radio" id="estrela5" name="classificacao" value="5">
-      <label for="estrela5">☆☆☆☆☆</label>
-    </div>
+  <!-- Formulário principal -->
+  <main>
+    <form method="get" action="avaliacao.html">
+      
+      <label for="produto">Nome do Produto</label>
+      <select id="produto" name="produto" required>
+        <option value="" disabled selected>Selecione um Produto...</option>
+      </select>
 
-    <label for="data">Data de Instalação</label>
-    <input type="date" id="data" name="data" required placeholder="dd/mm/aaaa">
+      <label>Classificação Geral</label>
+      <div class="stars">
+        <input type="radio" id="estrela1" name="classificacao" value="1" required>
+        <label for="estrela1">☆</label>
+        <input type="radio" id="estrela2" name="classificacao" value="2" required>
+        <label for="estrela2">☆☆</label>
+        <input type="radio" id="estrela3" name="classificacao" value="3" required>
+        <label for="estrela3">☆☆☆</label>
+        <input type="radio" id="estrela4" name="classificacao" value="4" required>
+        <label for="estrela4">☆☆☆☆</label>
+        <input type="radio" id="estrela5" name="classificacao" value="5" required>
+        <label for="estrela5">☆☆☆☆☆</label>
+      </div>
 
-    <label>Quais recursos você achou úteis no produto? (Marque todos que se aplicam)</label>
-    <div class="checkbox-group">
-      <label><input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade"> Durabilidade</label>
-      <label><input type="checkbox" id="facilidade" name="recursos" value="Facilidade de Uso"> Facilidade de Uso</label>
-      <label><input type="checkbox" id="desempenho" name="recursos" value="Desempenho"> Desempenho</label>
-      <label><input type="checkbox" id="design" name="recursos" value="Design"> Design</label>
-    </div>
+      <label for="data">Data de Instalação</label>
+      <input type="date" id="data" name="data" required>
+      <span class="hint">Formato: dd/mm/aaaa</span>
 
-    <label for="avaliacao">Avaliação Escrita (Optional)</label>
-    <textarea id="avaliacao" name="avaliacao" rows="4"></textarea>
+      <label>Quais recursos você achou úteis no produto? (Marque todos que se aplicam)</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade"> Durabilidade</label>
+        <label><input type="checkbox" id="facilidade" name="recursos" value="Facilidade de Uso"> Facilidade de Uso</label>
+        <label><input type="checkbox" id="desempenho" name="recursos" value="Desempenho"> Desempenho</label>
+        <label><input type="checkbox" id="design" name="recursos" value="Design"> Design</label>
+      </div>
 
-    <label for="usuario">Seu Nome (Optional)</label>
-    <input type="text" id="usuario" name="usuario">
+      <label for="avaliacao">Avaliação Escrita (Optional)</label>
+      <textarea id="avaliacao" name="avaliacao" rows="4"></textarea>
 
-    <input type="submit" value="Publicar Avaliação">
-  </form>
+      <label for="usuario">Seu Nome (Optional)</label>
+      <input type="text" id="usuario" name="usuario">
 
+      <input type="submit" value="Publicar Avaliação">
+    </form>
+  </main>
+
+  <!-- Rodapé semântico -->
   <footer>
-    ©2026 🎓 João Alberto Gonçalves Correa 🎓 Brasil - Última Modificação: 01/08/2026 14:22
+    ©2026 🎓 João Alberto Gonçalves Correa 🎓 Brasil - Última Modificação: 01/08/2026 14:34
   </footer>
 
   <script src="scripts/script-formulario.js"></script>
 </body>
 </html>
-
