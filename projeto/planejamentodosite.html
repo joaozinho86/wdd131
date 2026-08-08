@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Segurança em Foco</title>
-  <!-- CSS principal -->
   <link rel="stylesheet" href="estilos/seguranca.css">
-  <!-- CSS responsivo -->
   <link rel="stylesheet" href="estilos/seguranca-responsivo.css">
 </head>
 <body>
@@ -15,11 +13,9 @@
     <div class="logo">ST</div>
     <h1>Segurança em Foco</h1>
     <p class="tagline">Práticas, normas e informações para ambientes de trabalho mais seguros e saudáveis.</p>
-    <p><strong>Domínio sugerido:</strong> segurancaemfoco.com.br</p>
-    <p><strong>Motivo da escolha:</strong> Nome simples e direto, transmite credibilidade e foco em segurança ocupacional.</p>
   </header>
 
-  <!-- Imagens lado a lado -->
+  <!-- Imagens -->
   <section class="imagens-lado-a-lado">
     <div class="imagem-pequena">
       <img src="imagem/imagem-pequena.webp" alt="Imagem ilustrativa pequena">
@@ -32,52 +28,109 @@
   <!-- Layout principal -->
   <main class="layout-desktop">
     <div class="coluna-esquerda">
-      <section class="finalidade">
-        <h2>Finalidade do Site</h2>
-        <p>O site <strong>Segurança em Foco</strong> é um centro de referência em segurança do trabalho...</p>
+      <section>
+        <h2>Artigos</h2>
+        <p>Os informativos sobre legislação e normas regulamentadoras são ferramentas essenciais para manter empresas e trabalhadores atualizados sobre as leis federais e as Normas Regulamentadoras (NRs) de segurança e saúde no trabalho.
+          Eles transformam textos jurídicos complexos em resumos práticos e fáceis de entender, ajudando os negócios a evitar multas, garantir a conformidade com a lei e proteger a integridade dos funcionários no dia a dia.</p>
       </section>
 
-      <section class="cenarios">
-        <h2>Cenários</h2>
+      <section>
+        <h2>Guias Práticos</h2>
+        <p><strong>O que é a prevenção de acidentes?</strong><br>
+        É o conjunto de ações que evitam que os trabalhadores sofram danos físicos ou adoeçam por causa da atividade que exercem. Cuidar da segurança é uma responsabilidade da empresa e também de cada empregado.</p>
+
+        <h3>Boas práticas no dia a dia</h3>
         <ul>
-          <li>Quais EPIs são obrigatórios na construção civil?</li>
-          <li>Como implementar um programa de prevenção de riscos ambientais?</li>
-        </ul>
+        <li><strong>Use os EPIs:</strong> Utilize sempre os Equipamentos de Proteção Individual (como óculos, capacetes, luvas e protetores auriculares) que a empresa fornece.</li>
+        <li><strong>Mantenha o local limpo:</strong> Um ambiente organizado evita tropeços, quedas e escorregões. Não deixe fios ou caixas no meio dos caminhos.</li>
+        <li><strong>Respeite as sinalizações:</strong> Preste atenção aos avisos de perigo, piso molhado ou áreas proibidas.</li>
+        <li><strong>Avise sobre defeitos:</strong> Se notar uma máquina quebrada, um fio desencapado ou qualquer outro risco, comunique o responsável imediatamente.</li>
+        <li><strong>Faça pausas:</strong> O cansaço excessivo diminui a atenção e aumenta as chances de erros e acidentes.</li>
+      </ul>
+
+        <h3>Vantagens de um ambiente seguro</h3>
+      <ul>
+        <li>Reduz o número de faltas e afastamentos médicos.</li>
+        <li>Melhora o clima de trabalho e a confiança da equipe.</li>
+        <li>Aumenta a produtividade de forma tranquila e saudável.</li>
+      </ul>
       </section>
 
-      <section class="dados">
-        <h2>Dados</h2>
-        <p><strong>Norma:</strong> NR-6</p>
-        <p><strong>Descrição:</strong> Equipamentos de Proteção Individual</p>
-        <p><strong>Status:</strong> Obrigatório</p>
+      <section>
+        <h2>Materiais Educativos</h2>
+        <p>Vídeos, infográficos e checklists.</p>
       </section>
     </div>
 
     <div class="coluna-direita">
-      <section class="clima">
-        <h2>Clima</h2>
-        <p><strong>Temperatura:</strong> 25°C</p>
-        <p><strong>Umidade:</strong> 60%</p>
-        <img src="imagem/imagem-clima.webp" alt="Ícone de clima">
+      <section>
+        <h2>Notícias</h2>
+        <p>Atualizações sobre mudanças nas leis e tendências na área.</p>
       </section>
 
-      <section class="cores">
-        <h2>Esquema de Cores</h2>
-        <p>Azul (#1E88E5) – títulos e links</p>
-        <p>Amarelo (#F9A825) – alertas e botões</p>
-      </section>
+      <section class="avaliacao">
+      <h2>Pesquisa de Avaliação</h2>
+  <form id="formPesquisa" class="formulario">
+    <div class="bloco">
+      <label for="produto">Nome do Produto:</label>
+      <select id="produto" required>
+        <option value="">Selecione</option>
+        <option value="site">Site Segurança em Foco</option>
+        <option value="artigos">Artigos Informativos</option>
+        <option value="guias">Guias Práticos</option>
+        <option value="materiais">Materiais Educativos</option>
+      </select>
+    </div>
 
-      <section class="tipografia">
-        <h2>Tipografia</h2>
-        <p>Montserrat para títulos, Roboto para corpo, Segoe UI como fallback.</p>
+    <div class="bloco">
+      <label for="classificacao">Classificação Geral:</label>
+      <div class="estrelas">
+        <input type="radio" id="estrela5" name="classificacao" value="5"><label for="estrela5">★</label>
+        <input type="radio" id="estrela4" name="classificacao" value="4"><label for="estrela4">★</label>
+        <input type="radio" id="estrela3" name="classificacao" value="3"><label for="estrela3">★</label>
+        <input type="radio" id="estrela2" name="classificacao" value="2"><label for="estrela2">★</label>
+        <input type="radio" id="estrela1" name="classificacao" value="1"><label for="estrela1">★</label>
+      </div>
+    </div>
+
+      <div class="bloco">
+        <label for="data">Data da Avaliação:</label>
+        <input type="date" id="data" required>
+      </div>
+
+    <fieldset class="bloco">
+      <legend>Quais recursos você achou úteis no site?</legend>
+      <div class="checkboxes">
+        <label><input type="checkbox" value="Clareza"> Clareza</label>
+        <label><input type="checkbox" value="Relevância"> Relevância</label>
+        <label><input type="checkbox" value="Utilidade"> Utilidade</label>
+        <label><input type="checkbox" value="Design"> Design</label>
+      </div>
+    </fieldset>
+
+      <div class="bloco">
+        <label for="comentario">Avaliação Escrita (Opcional):</label>
+        <textarea id="comentario" placeholder="Deixe sua opinião"></textarea>
+      </div>
+
+      <div class="bloco">
+        <label for="nome">Seu Nome (Opcional):</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+      </div>
+
+        <button type="submit" class="botao">Publicar Avaliação</button>
+      </form>
+
+      <div id="resultado" class="resultado"></div>
       </section>
     </div>
   </main>
 
   <!-- Rodapé -->
   <footer>
-    <p>© 2026 Segurança em Foco • Sant’Ana do Livramento • Última modificação: 29/07/2026</p>
+    <p>© 2026 Segurança em Foco • Sant’Ana do Livramento</p>
   </footer>
 
+  <script src="scripts/seguranca.js"></script>
 </body>
 </html>
